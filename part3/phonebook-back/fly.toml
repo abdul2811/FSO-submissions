@@ -23,3 +23,8 @@ primary_region = "ewr"
   cpu_kind = "shared"
   cpus = 1
   memory_mb = 1024
+
+[[services.routes]]
+  match = "/*"
+  handle = "rewrite"
+  destination = "/index.html"
