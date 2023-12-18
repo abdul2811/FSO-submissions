@@ -21,11 +21,11 @@ primary_region = "ewr"
 
 [[services.ports]]
   handlers = ["http"]
-  protocol = "tcp"
+  port = 80
 
 [[services.ports]]
   handlers = ["http"]
-  protocol = "tls"
+  port = 443
 
 [[vm]]
   cpu_kind = "shared"
