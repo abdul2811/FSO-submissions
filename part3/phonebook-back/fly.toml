@@ -19,6 +19,14 @@ primary_region = "ewr"
   min_machines_running = 0
   processes = ["app"]
 
+[[services.ports]]
+  handlers = ["http"]
+  protocol = "tcp"
+
+[[services.ports]]
+  handlers = ["http"]
+  protocol = "tls"
+
 [[vm]]
   cpu_kind = "shared"
   cpus = 1
